@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://localhost:8080/t/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/t/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="http://localhost:8080/t/css/bootstrap.css">
+    <link rel="stylesheet" href="http://localhost:8080/t/css/home.css">
+    <title>Administrator_login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row row-100px">
+            <div class="col-lg-4 col-lg-offset-4">
+                <form role="form" method="post" action="http://localhost:8080/t/act/login_super">
+                    <div class="form-group">
+                        <label for="name" class="control-label">账号：</label>
+                        <input id="name" class="form-control" name="username" >
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码：</label>
+                        <input type="password" id="password" class="form-control" name="password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-default col-lg-12 but-blue">登陆</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

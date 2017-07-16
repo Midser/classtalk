@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="com" extends="struts-default" namespace="/act">
+        <action name="login" class="com.login">
+            <result name="success">/R_success.html</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="login_super" class="com.login_super">
+            <result name="success">/publish_news.jsp</result>
+            <result name="error">/R_superError.html</result>
+        </action>
+        <action name="register" class="com.register">
+            <result name="success">/R_success.html</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="news" class="com.load_news">
+            <result name="success">/ClassTalk-news.jsp</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="messages" class="com.load_messages">
+            <result name="success">/ClassTalk-messages.jsp</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="talk" class="com.load_talk">
+            <result name="success">/ClassTalk-talk.jsp</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="vote" class="com.load_ballotbox">
+            <result name="success">/ClassTalk-vote.jsp</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="user" class="com.load_user">
+            <result name="success">/publish_account.jsp</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="talk_root" class="com.load_talk_root">
+            <result name="success">/publish_talk.jsp</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="updata_talk" class="com.updata_talk">
+            <result name="success">/R_success.html</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="updata_news" class="com.updata_news">
+            <result name="success">/R_superSuccess.html</result>
+            <result name="error">/R_superError.html</result>
+        </action>
+        <action name="updata_messages" class="com.updata_messages">
+            <result name="success">/R_superSuccess.html</result>
+            <result name="error">/R_superError.html</result>
+        </action>
+        <action name="updata_ballotbox" class="com.updata_ballotbox">
+            <result name="success">/R_success.html</result>
+            <result name="error">/R_error.html</result>
+        </action>
+        <action name="updata_banned" class="com.updata_banned"></action>
+        <action name="updata_delateUser" class="com.updata_delateuser"></action>
+        <action name="updata_delateSpeech" class="com.updata_dalateSpeech"></action>
+        <action name="updata_vote" class="com.updata_vote"></action>
+        <action name="updata_replicator" class="com.updata_replicator"></action>
+    </package>
+</struts>
